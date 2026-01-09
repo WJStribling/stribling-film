@@ -1,0 +1,178 @@
+index.html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Private Screenwriting — William J. Stribling</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="name">William J. Stribling</span>
+        <span class="tag">Director • Screenwriter • Educator</span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" />
+      <label class="hamburger" for="nav-toggle" aria-hidden="true"><span></span></label>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="films.html">Films</a>
+        <a href="music.html">Music</a>
+        <a href="webseries.html">Web Series</a>
+        <a href="consultation.html" aria-current="page">Consultation</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" style="padding-bottom: 1.2rem;">
+      <div class="container">
+        <div class="kicker"><span class="dot"></span><span>One-on-one coaching • Notes • Career strategy</span></div>
+        <h1>Private Screenwriting Consultation</h1>
+        <p class="lede">
+          Personalized guidance for writers at any stage—from foundational craft to final-draft polish and professional strategy.
+        </p>
+        <div class="cta-row">
+          <a class="button primary" href="#signup">Request a Consultation</a>
+          <a class="button" href="mailto:williamjstribling@gmail.com">Email Directly</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <div class="section-head">
+          <h2>Menu of Options</h2>
+          <p>Swap in your real rates, delivery timelines, and what’s included.</p>
+        </div>
+
+        <div class="pricing">
+          <div class="card price-card">
+            <div class="pill"><b>Start</b> • Intro</div>
+            <div class="price">$___</div>
+            <div class="small">30-minute consultation</div>
+            <ul class="ul">
+              <li>Goal-setting + next steps</li>
+              <li>Project diagnosis (concept/outline/draft)</li>
+              <li>Action plan</li>
+            </ul>
+          </div>
+
+          <div class="card price-card">
+            <div class="pill"><b>Deep</b> • Craft</div>
+            <div class="price">$___</div>
+            <div class="small">60-minute session</div>
+            <ul class="ul">
+              <li>Scene + structure work</li>
+              <li>Character clarity + stakes</li>
+              <li>Follow-up notes</li>
+            </ul>
+          </div>
+
+          <div class="card price-card">
+            <div class="pill"><b>Notes</b> • Draft</div>
+            <div class="price">$___</div>
+            <div class="small">Written notes package</div>
+            <ul class="ul">
+              <li>Detailed written notes</li>
+              <li>Optional call to discuss</li>
+              <li>Revision roadmap</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="signup">
+      <div class="container">
+        <div class="section-head">
+          <h2>Request a Consultation</h2>
+          <p>This form can email you via a service later; for now it’s a clean front-end template.</p>
+        </div>
+
+        <div class="grid">
+          <div class="card pad" style="grid-column: span 7;">
+            <form action="mailto:williamjstribling@gmail.com" method="post" enctype="text/plain">
+              <div class="form-grid">
+                <div>
+                  <label for="name">Name</label>
+                  <input id="name" name="name" autocomplete="name" required />
+                </div>
+                <div>
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" autocomplete="email" required />
+                </div>
+                <div>
+                  <label for="project">Project Type</label>
+                  <select id="project" name="project">
+                    <option>Feature</option>
+                    <option>TV / Episodic</option>
+                    <option>Short</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="service">Service</label>
+                  <select id="service" name="service">
+                    <option>30-min Consultation</option>
+                    <option>60-min Session</option>
+                    <option>Written Notes Package</option>
+                    <option>Ongoing Coaching</option>
+                  </select>
+                </div>
+              </div>
+
+              <div style="margin-top:1rem;">
+                <label for="message">What are you working on?</label>
+                <textarea id="message" name="message" placeholder="Logline + where you are in the process + what you want help with"></textarea>
+              </div>
+
+              <div class="cta-row">
+                <button class="button primary" type="submit">Send Request</button>
+                <a class="button" href="mailto:williamjstribling@gmail.com">Or email directly</a>
+              </div>
+
+              <p class="small" style="margin:1rem 0 0;">
+                Note: mailto forms depend on the visitor’s email client. If you want a reliable form, hook this up to Formspree/Netlify Forms or a simple backend endpoint.
+              </p>
+            </form>
+          </div>
+
+          <aside class="card pad" style="grid-column: span 5;">
+            <h3 style="margin-top:0;">What you’ll get</h3>
+            <p class="small">
+              Clear next steps, practical craft tools, and the industry-facing perspective of someone actively directing and writing.
+            </p>
+            <hr style="border:none; border-top:1px solid var(--line); margin:1rem 0;">
+            <div class="pill"><b>Fast</b> response</div>
+            <p class="small" style="margin-top:.7rem;">
+              Typical turnaround and scheduling details can live here.
+            </p>
+            <p class="small">
+              Contact: <a href="mailto:williamjstribling@gmail.com"><b>williamjstribling@gmail.com</b></a>
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-row">
+        <div>© <span id="y"></span> William J. Stribling</div>
+        <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+          <a href="films.html">Films</a>
+          <a href="music.html">Music</a>
+          <a href="webseries.html">Web Series</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
