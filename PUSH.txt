@@ -1,0 +1,8 @@
+Paste into Terminal to publish the striblingfilm.com redirect:
+
+  cd ~/Documents/striblingfilm-redirect
+  git init -b main
+  git add -A
+  git commit -m "Redirect striblingfilm.com to williamjstribling.com"
+  git remote add origin https://github.com/WJStribling/stribling-film.git
+  git push -f origin main
